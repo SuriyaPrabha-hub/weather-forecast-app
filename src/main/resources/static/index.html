@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>India Weather App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>India Weather App</h1>
+
+    <input type="text" id="cityInput" placeholder="Enter Indian City">
+    <br>
+    <button onclick="getWeather()">Search Weather</button>
+    <br>
+    <button onclick="getLocationWeather()">Use My Location</button>
+
+    <div class="weather-box" id="weatherBox" style="display:none;">
+        <h2 id="location"></h2>
+
+        <div class="row"><span class="label">Temperature</span><span id="temperature"></span></div>
+        <div class="row"><span class="label">Feels Like</span><span id="feelsLike"></span></div>
+        <div class="row"><span class="label">Humidity</span><span id="humidity"></span></div>
+        <div class="row"><span class="label">Pressure</span><span id="pressure"></span></div>
+        <div class="row"><span class="label">Wind Speed</span><span id="wind"></span></div>
+        <div class="row"><span class="label">Condition</span><span id="description"></span></div>
+    </div>
+
+    <div class="forecast-container" id="forecastContainer">
+        <h3>5-Day Forecast</h3>
+        <div class="forecast-cards" id="forecastCards"></div>
+    </div>
+
+    <footer>Pan-India Weather Coverage | OpenWeather API</footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
